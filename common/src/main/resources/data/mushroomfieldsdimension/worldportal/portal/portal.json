@@ -1,0 +1,8 @@
+{
+  "frame_top_right": "minecraft:mycelium",
+  "frame_top_left": "minecraft:mycelium",
+  "frame_bottom_right": "minecraft:coarse_dirt",
+  "frame_bottom_left": "minecraft:coarse_dirt",
+  "mode": "worldportal:default",
+  "destination": "mushroomfieldsdimension:overworld"
+}

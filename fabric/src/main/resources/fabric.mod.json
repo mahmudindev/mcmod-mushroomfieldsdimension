@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "mushroomfieldsdimension",
+  "version": "${version}",
+  "name": "Mushroom Fields Dimension",
+  "description": "Add mushroom fields single biome world type as separate dimension.",
+  "authors": [
+    "mahmudindev"
+  ],
+  "contact": {
+    "homepage": "https://github.com/mahmudindev",
+    "sources": "https://github.com/mahmudindev/mcmod-mushroomfieldsdimension"
+  },
+  "license": "ARR",
+  "icon": "assets/mushroomfieldsdimension/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.mahmudindev.mcmod.mushroomfieldsdimension.fabric.MushroomFieldsDimensionFabric"
+    ],
+    "client": [
+      "com.github.mahmudindev.mcmod.mushroomfieldsdimension.fabric.client.MushroomFieldsDimensionFabricClient"
+    ]
+  },
+  "mixins": [
+    "mushroomfieldsdimension.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "dimensionfixer": ">=0.0.9",
+    "worldportal": ">=0.0.9"
+  },
+  "suggests": {
+    "fabric-api": "*"
+  }
+}
