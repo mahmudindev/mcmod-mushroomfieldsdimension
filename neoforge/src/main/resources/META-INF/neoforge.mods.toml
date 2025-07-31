@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[47,)"
+loaderVersion = "[4,)"
 issueTrackerURL = "https://github.com/mahmudindev/mcmod-mushroomfieldsdimension"
 license = "ARR"
 
@@ -14,29 +14,32 @@ Add mushroom fields single biome world type as separate dimension.
 logoFile = "assets/mushroomfieldsdimension/icon.png"
 
 [[dependencies.mushroomfieldsdimension]]
-modId = "forge"
-mandatory = true
-versionRange = "[47,)"
+modId = "neoforge"
+type = "required"
+versionRange = "[21.0,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.mushroomfieldsdimension]]
 modId = "minecraft"
-mandatory = true
-versionRange = "[1.20.1,)"
+type = "required"
+versionRange = "[1.21,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.mushroomfieldsdimension]]
 modId = "dimensionfixer"
-mandatory = true
+type = "required"
 versionRange = "[0.0.9,)"
 ordering = "NONE"
 side = "SERVER"
 
 [[dependencies.mushroomfieldsdimension]]
 modId = "worldportal"
-mandatory = true
+type = "required"
 versionRange = "[0.0.9,)"
 ordering = "NONE"
 side = "SERVER"
+
+[[mixins]]
+config = "mushroomfieldsdimension.mixins.json"
